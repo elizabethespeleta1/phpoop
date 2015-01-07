@@ -5,8 +5,17 @@
 
 	//1st example 
 	class shoe{
-		public $new = "tbh";
-		public $color = "idek";
+		public $new = "which type";
+		public $color = "color";
+		public $size = "1234";
+		public $cost = "$$$";
+
+		function __construct($new, $color, $size, $cost){
+			$this->new = $new;
+			$this->color = $color;
+			$this->size = $size;
+			$this->cost = $cost;
+		}
 
 		function getMoney(){
 			return "{$this->new}" . "{$this->color}";
@@ -21,8 +30,17 @@
 
 	//2nd example
 	class videogame{
-		public $game = "tbh";
-		public $console = "idek";
+		public $game = "aw";
+		public $console = "best console";
+		public $youtuber = "person";
+		public $gun = "shotsfired";
+
+		function __construct($game, $console, $youtuber, $gun){
+			$this->game = $game;
+			$this->console = $console;
+			$this->youtuber = $youtuber;
+			$this->gun = $gun;
+		}
 
 		function getGood(){
 			return "{$this->game}" . "{$this->console}";
@@ -37,8 +55,17 @@
 
 	//3rd example
 	class fangirling{
-		public $show1 = "tbh";
-		public $show2 = "idek";
+		public $show1 = "ioweyou";
+		public $show2 = "moose";
+		public $band = "om&m";
+		public $band2 = "tn";
+
+		function __construct($show1, $show2, $band, $band2){
+			$this->show1 = $show1;
+			$this->show2 = $show2;
+			$this->band = $band;
+			$this->band2 = $band2;
+		}
 
 		function getAmazing(){
 			return "{$this->show1}" ." and " . "{$this->show2}";
@@ -50,5 +77,6 @@
 	$fangirl->show2 = "Supernatural";
 
 	print "The shows I like are {$fangirl->getAmazing()}.";
+
 
 ?>
