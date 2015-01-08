@@ -20,6 +20,14 @@
 		function getMoney(){
 			return "{$this->new}" . "{$this->color}";
 		}
+
+		//* boolean expresses a truth value . It can either be true or false 
+		if (is_bool($size) === true) {
+    		echo "Yes, this is a boolean";
+		}
+		if (is_bool($size) === false) {
+    		echo "No this isn't a boolean";
+		}
 	}
 
 	$pair = new shoe();
